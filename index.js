@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const port = 3001;
 
-let unusedVariable = 123;
 
 let tasks = [
   { id: 1, title: 'Learn SonarQube', done: false },
