@@ -3,14 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  
   "scripts": {
-  "test": "set NODE_ENV=test&& jest --coverage",
-  "start": "node index.js"
+    "test": "set NODE_ENV=test&& jest --coverage",
+    "start": "node index.js"
   },
-
-
-
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -18,7 +14,9 @@
   "dependencies": {
     "express": "^5.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NassimeElkamari/nodejs-sonar.git"
