@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const port = 3001;
 
-
 let tasks = [
   { id: 1, title: 'Learn SonarQube', done: false },
   { id: 2, title: 'Integrate with Jenkins', done: false }
@@ -34,7 +33,10 @@ function addNumbers(a, b) {
   return a + b;
 }
 
+if (process.env.NODE_ENV !== 'test') {
+  app.listen(port, () => {
+    console.log(`Node Sonar API listening on port ${port}`);
+  });
+}
 
-app.listen(port, () => {
-  console.log(`Node Sonar API listening on port ${port}`);
-});
+module.exports = { app, addNumbers };

@@ -3,14 +3,28 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "test": "set NODE_ENV=test&& jest --coverage",
+  "start": "node index.js"
   },
+
+
+
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
     "express": "^5.1.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NassimeElkamari/nodejs-sonar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NassimeElkamari/nodejs-sonar/issues"
+  },
+  "homepage": "https://github.com/NassimeElkamari/nodejs-sonar#readme"
 }
