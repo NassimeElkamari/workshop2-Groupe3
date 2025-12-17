@@ -3,7 +3,6 @@ pipeline {
 
     environment {
         SONAR_HOST_URL = 'http://sonarqube-server:9000'
-        SONAR_TOKEN    = 'sqa_10af5d35417bce83a9dd2f997e782872df462e26'  
         SONAR_NETWORK  = 'sonarqube_sonarnet'
     }
 
