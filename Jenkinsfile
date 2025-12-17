@@ -30,10 +30,14 @@ pipeline {
         stage('Semgrep SAST') {
             steps {
                 bat '''
+                chcp 65001 >NUL
+                set PYTHONUTF8=1
+                set PYTHONIOENCODING=utf-8
                 semgrep --config auto --severity ERROR --error .
                 '''
             }
         }
+
 
 
 
